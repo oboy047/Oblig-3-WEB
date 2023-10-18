@@ -1,0 +1,62 @@
+<!DOCTYPE html>
+<html lang="en" dir="ltr">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>valg-fri-side</title>
+    <link rel="stylesheet" href="css/style.css">
+    <script src="https://kit.fontawesome.com/7b467d2fce.js" crossorigin="anonymous"></script>
+</head>
+
+<body>
+    <div id="grid-contanier">
+        <header>
+             <nav>
+
+                <a href="#" id="logo">
+                    <img src="img/image 5.png" alt="footie-store" id="logo">
+                </a>
+                
+                <div id="icons">
+                    <i class="fa-solid fa-magnifying-glass"></i>
+                    <i id="ham" class="fa-solid fa-bars"></i>
+                </div>
+        
+                <ul class="navbar">
+                    <li><a href="home">Home</a></li>
+                    <li><a href="home">Products</a></li>
+                    <li><a href="home">Contact</a></li>
+                    <li><a href="home">Services</a></li>
+
+                </ul>
+        
+            </nav>
+        </header>
+
+        <main>
+            
+
+        <footer>
+
+        </footer>
+        
+    </div>
+
+    <script>
+        
+        let x = document.querySelector(".navbar")
+        
+        document.getElementById("ham").addEventListener("click", (e) => {
+            
+            if (x.className === "navbar") {
+                
+                x.className += " responsive";
+            } else {
+            
+                x.className = "navbar"
+            }
+        })
+    </script>
+</body>
+</html>
