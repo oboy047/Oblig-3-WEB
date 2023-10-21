@@ -219,6 +219,7 @@ main section.shoes-container{
     display: flex;
     flex-direction: column;
     justify-content: space-evenly;
+    gap: 35px;
 }
 
 main section.shoes{
@@ -295,25 +296,32 @@ hr{
 
 .button{
     margin: 10px;
-    border-radius: 50px;
+    border-radius: 25px;
     display: inline-block;
-    background-color:#B5B5B5;
+    background-color:#D9D9D9;
+    width: 500px;
+    height: 100px;
 }
 
 .add-button{
     font-weight: 600;
     font-family: Arial, Helvetica, sans-serif;
-    font-size: 35px;
+    font-size: 50px;
+    margin: 2.5px;
 }
 
-.shoe-sizes{
-    display: flexbox;
+.shoe-sizes-1{
+    display: flex;
+    width: 100px;
+}
 
-    width: 128px;
+.shoe-sizes-2{
+    display: flex;
+    width: 100px;
 }
 
 .ucl{
-    background-color:#B5B5B5;
+    background-color:#D9D9D9;
     border-radius: 40px;
 }
 
@@ -336,6 +344,15 @@ main section.brand-icons{
     display: flex;
     align-items: baseline;
     justify-content: space-evenly;
+}
+
+.shoe-container{
+    display: flex;
+    flex-direction: column;
+}
+
+.valg{
+    display: inline;
 }
 
 
@@ -435,7 +452,11 @@ main section.brand-icons{
         display: none;
     } 
 
-
+    .valg{
+        display: flex;
+        align-items: center;
+        gap: 250px;
+    }
     
     /* Footer styles */
 
@@ -547,6 +568,27 @@ main section.brand-icons{
     }
 
 }
+
+
+@media screen and (max-width : 1427px) {
+
+    .over-text{
+        display: none;
+    }
+    
+}
+
+
+@media screen and (max-width : 1050px){
+    main section.shoes{
+        display: flex;
+        justify-content:space-around;
+        gap: 20px;
+        width: 100%;
+    }
+}
+
+
 @media screen and (min-width : 1900px) {
 
     main section.shoes{
@@ -559,5 +601,9 @@ main section.brand-icons{
 
 }
 
-@media screen and (min-width : 1417px ) {
+@media screen and (max-width : 1022px ) {
+    .valg{
+        gap:80px;
+        width: 100%;
+    }
 }
